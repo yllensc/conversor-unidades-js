@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de unidades</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container-opciones">
+        <div class="container">
+            <div id="c1" class="shape"><i class="fa-solid fa-temperature-low icon"></i>
+                <h4>Temperatura</h4>
+            </div>
+        </div>
+        <div class="container">
+            <div id="c2" class="shape"><i class="fa-solid fa-weight-hanging icon"></i>
+                <h4>Peso</h4>
+            </div>
+        </div>
+        <div class="container">
+            <div id="c3" class="shape"><i class="fa-solid fa-tape icon"></i>
+                <h4>Distancia</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-calcular">
+        <label for="unit1" id="label1">Celsius</label><label for="unit2" id="label2">Faren</label><br>
+        <input id="unit1" type="text" placeholder="..."><p id="equal">=</p><input id="unit2" type="text" placeholder="...">
+
+
+        <button>Convertir</button>
+    </div>
+
+
+    <script src="conversor.js" type="module"></script>
+</body>
+
+</html>
