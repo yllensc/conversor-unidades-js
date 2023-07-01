@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +8,10 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-
+    <header class="header">
+        <h1>Conversor de unidades</h1>
+    </header>
     <div class="container-opciones">
         <div class="container">
             <div id="c1" class="shape"><i class="fa-solid fa-temperature-low icon"></i>
@@ -30,18 +29,13 @@
             </div>
         </div>
     </div>
-
-
     <div class="container-calcular">
-        <label for="unit1" id="label1">Celsius</label><label for="unit2" id="label2">Faren</label><br>
-        <input id="unit1" type="text" placeholder="..."><p id="equal">=</p><input id="unit2" type="text" placeholder="...">
-
-
-        <button>Convertir</button>
+        <label for="unit1" id="label1">Celsius</label>
+        <label for="unit2" id="label2">Faren</label><br>
+        <input id="unit1" type="number" placeholder="...">
+        <button id="btnConvertir"><i class="fa-solid fa-circle-arrow-right" id="iconConvert"></i></button>
+        <input id="unit2" type="number" placeholder="..." readonly>
     </div>
-
-
     <script src="conversor.js" type="module"></script>
 </body>
-
 </html>

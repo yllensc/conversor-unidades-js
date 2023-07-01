@@ -1,4 +1,20 @@
-.container{
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('/images/fondo.jpg');
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #313168;
+    position: absolute;
+}
+
+.container {
     padding: 10px;
     height: 100px;
     width: 100%;
@@ -6,49 +22,55 @@
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-  }
+}
 
-  /* Círculo */
+/* Círculo */
 .shape {
-	width: 400px;
-	height: 100px;
+    width: 400px;
+    height: 100px;
     border-radius: 10px;
-	border-top-left-radius: 60px;
+    border-top-left-radius: 60px;
     margin-top: 200px;
-    
+
 }
 
-#c1{
+#c1 {
     margin-left: 200px;
-    background-color: #63639c;
+    background-color: #484888;
 }
 
-#c2{
+#c2 {
     margin-left: 400px;
-    background-color: #489cac;
+    background-color: #c49c1b;
 }
 
-#c3{
+#c3 {
     margin-left: 600px;
-    background-color: #75ba35;
+    background-color: #5b9c1e;
 }
 
-.icon{
+#c1:hover,
+#c2:hover,
+#c3:hover {
+    cursor: pointer;
+}
+
+.icon {
     margin-top: 30px;
     margin-left: 40px;
     scale: 200%;
     color: azure;
 }
 
-h4{
+h1,
+h4 {
     margin-left: 30px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: azure;
 }
 
-.container-calcular{
+.container-calcular {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 350px;
     margin-left: 350px;
     position: absolute;
@@ -56,10 +78,26 @@ h4{
     text-align: center;
 }
 
-#label1{
-    grid-area: 1/1/2/2;
+#label1 {
+    background-color: #313168;
+    color: #fff;
+    grid-area: 1/1/2/1;
 }
 
-#label2{
+#label2 {
+    background-color: #313168;
+    color: #fff;
     grid-area: 1/3/1/3;
+}
+
+#btnConvertir {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 40%;
+}
+
+#iconConvert {
+    scale: 200%;
+    color: rgb(145, 20, 20);
 }
